@@ -97,8 +97,9 @@ html {
   font-weight: 600;
 }
 
-.best-artwork {
-  background-color: #d3b9b3;
+.best-artwork,
+.filter-galery {
+  background-color: #e5cbc6;
 }
 
 .overlay {
@@ -155,9 +156,13 @@ html {
   transition-duration: 1s;
 }
 
-footer{
+footer {
   background-color: #8a6056;
   color: white;
+}
+
+.nav-underline .nav-item .nav-link {
+  color: rgb(106, 52, 52);
 }
 
 @media screen and (max-width: 768px) {
