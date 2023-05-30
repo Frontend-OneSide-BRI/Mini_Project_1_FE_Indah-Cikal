@@ -2,7 +2,6 @@
 
 * {
   font-family: Poppins;
-  color: #3a231f;
 }
 
 html {
@@ -90,11 +89,75 @@ html {
 }
 
 .about {
-  background-color: #f6ddd8;
+  /* background-color: #f6ddd8; */
+  background-color: #f3e5e2;
 }
 
 .about-desc h2 {
   font-weight: 600;
+}
+
+.best-artwork {
+  background-color: #d3b9b3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #972a2aa0;
+}
+.container-card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.container-card:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.more-info {
+  transition-duration: 1s;
+  display: flex;
+  align-items: center;
+}
+
+.more-info i {
+  padding-left: 5px;
+  transition-duration: 1s;
+}
+
+.container-card:hover .more-info i {
+  padding-left: 20px;
+  transition-duration: 1s;
+}
+
+footer{
+  background-color: #8a6056;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
