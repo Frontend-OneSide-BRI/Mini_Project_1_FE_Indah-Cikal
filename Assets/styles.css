@@ -8,11 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.modal-body .form-control:focus {
-  border-color: rgb(200, 196, 196);
-  box-shadow: 0 0 0.5rem 0.1rem #ebe3e1;
-}
-
 .box {
   box-shadow: 0 5px 15px rgba(48, 43, 43, 0.25);
   border-radius: 13px;
@@ -28,6 +23,10 @@ html {
 
 .navbar {
   font-size: 16px;
+}
+
+.navbar .offcanvas {
+  background-color: #ebe3e1;
 }
 
 .caro-hero .carousel .carousel-item {
@@ -46,24 +45,50 @@ html {
 }
 
 .parallax:nth-child(1) {
-  background-image: url("/Assets/Images/hero-1.jpg");
+  background-image: url("https://images.unsplash.com/photo-1506268452458-bfb3757ed859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80");
 }
 .parallax:nth-child(2) {
-  background-image: url("/Assets/Images/hero-2.jpg");
+  background-image: url("https://plus.unsplash.com/premium_photo-1670591909035-df1e99c163df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
 }
 .parallax:nth-child(3) {
-  background-image: url("/Assets/Images/hero-3.jpg");
+  background-image: url("https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
 }
 
 .caro-hero .carousel .carousel-item .carousel-caption {
   bottom: 7.25rem;
-  color: black;
+  /* color: black; */
   /* color: #3a231f; */
 }
 
 .caro-hero .carousel-caption h1 {
   font-weight: 700;
   letter-spacing: 5px;
+}
+
+.modal-dialog .modal-content {
+  background-color: #f8edeb;
+}
+
+.modal-body .form-control {
+  background-color: #f8f2f1;
+}
+
+.modal-body .form-control:focus {
+  border-color: rgb(205, 180, 180);
+  box-shadow: 0 0 0.5rem 0.1rem #ebe3e1;
+  background-color: #f8f2f1;
+}
+
+.modal-footer .send {
+  background-color: #885752;
+  color: white;
+  transition: 0.3s;
+}
+
+.modal-footer .send:hover {
+  transition: 0.4s;
+  background-color: #552724;
+  color: white;
 }
 
 .about .carousel .carousel-item {
@@ -88,18 +113,19 @@ html {
   color: rgb(252, 249, 247);
 }
 
-.about {
-  /* background-color: #f6ddd8; */
-  background-color: #f3e5e2;
-}
+/* .about {
+  background-color: #f6ddd8;
+  background-color: #f4e3df;
+} */
 
 .about-desc h2 {
   font-weight: 600;
 }
 
 .best-artwork,
-.filter-galery {
-  background-color: #e5cbc6;
+.filter-galery,
+.about {
+  background-color: #f1e6e4;
 }
 
 .overlay {
@@ -157,8 +183,8 @@ html {
 }
 
 footer {
-  background-color: #8a6056;
-  color: white;
+  background-color: #d5b1a7;
+  color: rgb(62, 44, 44);
 }
 
 .nav-underline .nav-item .nav-link {
