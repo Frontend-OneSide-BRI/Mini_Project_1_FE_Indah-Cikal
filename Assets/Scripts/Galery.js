@@ -5,7 +5,7 @@ const modal = document.getElementById("modal-container");
 
 function renderCard(item) {
   content.innerHTML += `
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 py-2">
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 py-2">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-${item.id}">
               <div class="container-card rounded-4">
                 <img class="image" src="${item.src}" />
